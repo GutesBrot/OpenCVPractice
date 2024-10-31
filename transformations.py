@@ -4,6 +4,7 @@ import numpy as np
 img = cv.imread('Photos/cat.jpg')
 cv.imshow('Cat', img)
 
+#Translate
 def translate(img, x, y):
     # -x -> left
     # -y -> Up
@@ -15,6 +16,7 @@ def translate(img, x, y):
 translated = translate(img, 100, 100)
 cv.imshow('Translate', translated)
 
+#Resize
 def rotate(img, angle, rotPoint=None): 
     (height, width) = img.shape[:2]
 
@@ -29,4 +31,11 @@ def rotate(img, angle, rotPoint=None):
 rotated = rotate(img, 30)
 cv.imshow('Rotated', rotated)
 
+#Resize
+resized = cv.resize(img, (500,500), interpolation=cv.INTER_CUBIC)
+cv.imshow('Resized', resized)
+
+#Flip 
+flip = cv.flip(img, 0) # 0 is vertical, 1 is horizontal, -1 is both 
+cv.imshow('Flipped', flip)
 cv.waitKey(0)
