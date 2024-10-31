@@ -2,7 +2,8 @@ This is a small repo for me to get up to speed with using OpenCV in Python inste
 
 Topics covered will be: 
 * Reading Photos / Videos 
-* Image transformation 
+* Image transformation
+* ![Image showing transformation matrix](https://github.com/GutesBrot/OpenCVPractice/blob/main/Explanation%20Pictures/TransformationMatrix.jpeg?raw=true)
 * Color spaces 
 * Edge detection 
 * Face detection 
